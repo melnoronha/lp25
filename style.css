@@ -1,0 +1,266 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* COLORS and FONTS */
+body {
+    color: white;  /* https://rgbacolorpicker.com/hex-color-picker */
+    text-align: center;
+    font-family: Verdana;
+    font-size: 24px;
+    line-height: 3;
+}
+header {
+    background-color: #cc6600;
+    color: #ffffff ;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #000000;
+    }
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 14px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.main {
+    background-color: none;
+      display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background: #000000;
+}
+
+.one {
+  display: flex
+  flex-wrap: wrap;
+}
+
+.left-sidebar {
+    background-color: #c9c6a5;
+    color: #000000;
+    padding: 18vw;
+    font-size: 32px;
+}
+
+.right-sidebar {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12vw;
+    line-height: 1.8;
+}
+
+.left-sidebar2 {
+    background-color: #e5e5e5;
+    color: #cc6600;
+    padding: 16vw;
+    font-size: 32px;
+}
+.right-sidebar2 {
+    background: #c9c6a5;
+    color: #000000;
+    padding: 15vw;
+    line-height: 1.8;
+}
+.left-sidebar3 {
+    background-color: #ffffff;
+    color: #cc6600;
+    padding: 16vw;
+    font-size: 32px;
+}
+
+.right-sidebar3 {
+    background-color: #e5e5e5;
+    color: #000000;
+    padding: 12vw;
+    line-height: 1.8;
+   
+}
+.left-sidebar4 {
+    background-color: #c9c6a5;
+    color: #cc6600;
+    padding: 13vw;
+    font-size: 32px;
+}
+.right-sidebar4 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12vw;
+    line-height: 1.8;
+}
+
+
+.button2 {
+  text-decoration: none;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    background-color: #cc6600; 
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button2:hover{
+  background-color: rgba(201, 198, 165, 0.8);
+}
+
+.LeWagon{
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.FutreOfWork{
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.LandingJobs{
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.FJN {
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.MoL {
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  display: inline;
+}
+
+.list a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.list: hover a {
+  opacity: 0.8;
+}
+
+/* flexbox rules for mobile device */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* felxbox rules for desktop */
+
+@media all and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;    
+    } 
+    
+    header,
+    footer {
+        width: 100%;
+    }
+
+    .main,
+    .navbar {
+        width: 100%;
+    }
+
+    .one,
+    .two
+    .thee {
+          width: 100%;
+    }
+  
+    .left-sidebar {
+        order: 1;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar {
+        order: 2;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .left-sidebar2 {
+        order: 3;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar2 {
+        flex: 50%;
+        order: 4;
+        min-height: 80vh;
+    }
+
+    .left-sidebar3 {
+        order: 5;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar3 {
+        flex: 50%;
+        order: 6;
+        min-height: 80vh;
+    }
+
+    .left-sidebar4 {
+        order: 7;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar4 {
+        flex: 50%;
+        order: 8;
+        min-height: 80vh;
+    }
+
+    footer {
+        order: 9;
+    }
+}
